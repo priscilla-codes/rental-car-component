@@ -3,72 +3,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Rental Car Component</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="bg-top"></div>
-      <div class="bg-bottom"></div>
-      <div class="modal">
-        <form>
-          <h1>Search for a rental car</h1>
-          <div class="pickup-location-wrapper">
-            <label for="pickup-location">Pick up location</label>
-            <input
-              type="text"
-              id="pickup-location"
-              placeholder="City,airport,region,district..."
-            />
-            <input type="checkbox" value="1" id="delivery-option" />
-            <label for="delivery-option">Deliver the car somewhere else</label>
-          </div>
-          <div class="date-time-wrapper">
-            <label for="pickup-date">Date of pickup</label>
-            <select name="pickup-date" id="pickup-date">
-              <option value="Mon Apr 18 2022">Mon Apr 18 2022</option>
-              <option value="Tues Apr 19 2022">Tues Apr 19 2022</option>
-              <option value="Wed Apr 20 2022">Wed Apr 20 2022</option>
-              <option value="Thurs Apr 21 2022">Thurs Apr 21 2022</option>
-              <option value="Fri Apr 22 2022">Fri Apr 22 2022</option>
-              <option value="Sat Apr 23 2022">Sat Apr 23 2022</option>
-              <option value="Sun Apr 24 2022">Sun Apr 24 2022</option>
-            </select>
-            <label for="delivery-date">Date of pickup</label>
-            <select name="delivery-date" id="delivery-date">
-              <option value="Thurs Apr 21 2022">Thurs Apr 21 2022</option>
-              <option value="Fri Apr 22 2022">Fri Apr 22 2022</option>
-              <option value="Sat Apr 23 2022">Sat Apr 23 2022</option>
-              <option value="Sun Apr 24 2022">Sun Apr 24 2022</option>
-              <option value="Mon Apr 25 2022">Mon Apr 25 2022</option>
-              <option value="Tues Apr 26 2022">Tues Apr 26 2022</option>
-              <option value="Thur Apr 27 2022">Thurs Apr 27 2022</option>
-            </select>
-            <select name="pickup-hours" id="pickup-hours">
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-            <select name="pickup-minutes" id="pickup-minutes">
-              <option value="10">00</option>
-              <option value="11">15</option>
-              <option value="12">30</option>
-              <option value="1">45</option>
-            </select>
-          </div>
-          <input type="checkbox" value="1" id="driver-age-range" />
-          <label for="driver-age-range">The driver's between 30 and 65?</label>
-          <ul>
-            <li>No credit card fees</li>
-            <li>No change fees</li>
-            <li>Price match guarantee</li>
-          </ul>
-          <input type="submit" value="Search" />
-        </form>
+      <div class="main-content">
+        <div class="bg-top-wrapper">
+          <div class="bg-top"></div>
+        </div>
+        <div class="bg-bottom-wrapper">
+          <div class="bg-bottom"></div>
+        </div>
+        <div class="modal">
+          <form>
+            <h1>Search for a rental car</h1>
+            <div class="pickup-location-wrapper">
+              <label for="pickup-location">Pick up location</label>
+              <input
+                type="text"
+                id="pickup-location"
+                placeholder="City, airport, region, district..."
+              />
+            </div>
+            <div class="delivery-option-wrapper">
+              <input type="checkbox" value="1" id="delivery-option" />
+              <label for="delivery-option"
+                >Deliver the car somewhere else</label
+              >
+            </div>
+            <div class="date-time-wrapper">
+              <div class="pickup-date-wrapper">
+                <label for="pickup-date">Date of pickup</label>
+                <select name="pickup-date" id="pickup-date">
+                  <option value="Mon Apr 18 2022">Mon Apr 18 2022</option>
+                  <option value="Tues Apr 19 2022">Tues Apr 19 2022</option>
+                  <option value="Wed Apr 20 2022">Wed Apr 20 2022</option>
+                  <option value="Thurs Apr 21 2022">Thurs Apr 21 2022</option>
+                  <option value="Fri Apr 22 2022">Fri Apr 22 2022</option>
+                  <option value="Sat Apr 23 2022">Sat Apr 23 2022</option>
+                  <option value="Sun Apr 24 2022">Sun Apr 24 2022</option>
+                </select>
+              </div>
+              <div class="delivery-date-wrapper">
+                <label for="delivery-date">Date of delivery</label>
+                <select name="delivery-date" id="delivery-date">
+                  <option value="Thurs Apr 21 2022">Thurs Apr 21 2022</option>
+                  <option value="Fri Apr 22 2022">Fri Apr 22 2022</option>
+                  <option value="Sat Apr 23 2022">Sat Apr 23 2022</option>
+                  <option value="Sun Apr 24 2022">Sun Apr 24 2022</option>
+                  <option value="Mon Apr 25 2022">Mon Apr 25 2022</option>
+                  <option value="Tues Apr 26 2022">Tues Apr 26 2022</option>
+                  <option value="Thur Apr 27 2022">Thurs Apr 27 2022</option>
+                </select>
+              </div>
+              <div class="pickup-time-left">
+                <select name="pickup-hours" id="pickup-hours">
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <select name="pickup-minutes" id="pickup-minutes">
+                  <option value="10">00</option>
+                  <option value="11">15</option>
+                  <option value="12">30</option>
+                  <option value="1">45</option>
+                </select>
+              </div>
+              <div class="pickup-time-right">
+                <select name="delivery-hours" id="delivery-hours">
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                </select>
+                <select name="delivery-minutes" id="delivery-minutes">
+                  <option value="10">00</option>
+                  <option value="11">15</option>
+                  <option value="12">30</option>
+                  <option value="1">45</option>
+                </select>
+              </div>
+            </div>
+            <div class="driver-age-range-wrapper">
+              <input type="checkbox" value="1" id="driver-age-range" />
+              <label for="driver-age-range"
+                >The driver's between 30 and 65?</label
+              >
+              <img
+                src="./images/information-outline.svg"
+                alt="Girl in a jacket"
+                width="500"
+                height="600"
+              />
+            </div>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i><span>No credit card fees</span>
+              </li>
+              <li><i class="fas fa-check"></i><span>No change fees</span></li>
+              <li>
+                <i class="fas fa-check"></i><span>Price match guarantee</span>
+              </li>
+            </ul>
+            <input type="submit" value="Search" class="search-input" />
+          </form>
+        </div>
       </div>
     </div>
   </body>

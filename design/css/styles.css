@@ -1,0 +1,435 @@
+/** RESET **/
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+small,
+strike,
+strong,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+ul,
+nav,
+input,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wrapper {
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content {
+  background-color: #f3f3e3;
+  height: 53rem;
+  width: 80rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bg-top {
+  height: 29rem;
+  width: 20rem;
+  background-color: #fdc963;
+  position: absolute;
+  left: 24%;
+  top: 3rem;
+  border-radius: 3.6rem;
+}
+
+.bg-bottom {
+  height: 17rem;
+  width: 13rem;
+  background-color: #fd9b63;
+  position: absolute;
+  right: 21%;
+  bottom: 4.4rem;
+  border-radius: 3.6rem;
+}
+
+.modal {
+  width: 32rem;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1rem;
+}
+
+.modal form {
+  color: #243264;
+  padding: 3rem;
+}
+
+.modal form svg {
+  color: purple;
+}
+
+.modal form h1 {
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+
+.modal form ::-webkit-input-placeholder {
+  color: #243264;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.modal form :-ms-input-placeholder {
+  color: #243264;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.modal form ::-ms-input-placeholder {
+  color: #243264;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.modal form ::placeholder {
+  color: #243264;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.modal form ::-moz-placeholder {
+  color: #243264;
+  opacity: 10;
+}
+
+.modal form select {
+  color: #243264;
+}
+
+.modal form .pickup-location-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+
+.modal form .pickup-location-wrapper label {
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.modal form .pickup-location-wrapper input {
+  padding: 0.8rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #8d99c0;
+}
+
+.modal form .delivery-option-wrapper {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal form .date-time-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal form .date-time-wrapper label,
+.modal form .date-time-wrapper div {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.modal form .date-time-wrapper select {
+  padding: 0.9rem 0.3rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #8d99c0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg'  xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23243264' version='1.1' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.58L12 13.17L16.59 8.58L18 10L12 16L6 10L7.41 8.58Z' /%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 85% 50%;
+  border-radius: 0.2rem;
+}
+
+.modal form .date-time-wrapper select#pickup-hours, .modal form .date-time-wrapper select#delivery-hours {
+  padding-left: 2.3rem;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg'  xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23243264' version='1.1' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.58L12 13.17L16.59 8.58L18 10L12 16L6 10L7.41 8.58Z' /%3E%3C/svg%3E"), url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23243264' version='1.1' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.9 3 6V20A2 2 0 0 0 5 22H19A2 2 0 0 0 21 20V6A2 2 0 0 0 19 4M19 20H5V10H19V20M19 8H5V6H19V8Z' /%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 85% 50%, 14% 44%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.modal form .date-time-wrapper select#pickup-minutes, .modal form .date-time-wrapper select#delivery-minutes {
+  padding-left: 0.6rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.modal form .date-time-wrapper select#pickup-date, .modal form .date-time-wrapper select#delivery-date {
+  padding-left: 2.3rem;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23243264' version='1.1' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.58L12 13.17L16.59 8.58L18 10L12 16L6 10L7.41 8.58Z' /%3E%3C/svg%3E"), url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23243264' version='1.1' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.9 3 6V20A2 2 0 0 0 5 22H19A2 2 0 0 0 21 20V6A2 2 0 0 0 19 4M19 20H5V10H19V20M19 8H5V6H19V8Z' /%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 93% 50%, 6% 50%;
+}
+
+.modal form .date-time-wrapper label {
+  font-size: 0.8rem;
+}
+
+.modal form .date-time-wrapper label:first-child {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.modal form .date-time-wrapper label:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.modal form .date-time-wrapper #pickup-date {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.modal form .date-time-wrapper #delivery-date {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.modal form .date-time-wrapper .pickup-time-left {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.modal form .date-time-wrapper .pickup-time-right {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+.modal form .date-time-wrapper .pickup-time-left,
+.modal form .date-time-wrapper .pickup-time-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal form .date-time-wrapper .pickup-time-left select,
+.modal form .date-time-wrapper .pickup-time-right select {
+  display: block;
+}
+
+.modal form .date-time-wrapper .pickup-date-bottom,
+.modal form .date-time-wrapper .delivery-date-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.3rem 0;
+}
+
+.modal form .date-time-wrapper .pickup-date-bottom select,
+.modal form .date-time-wrapper .delivery-date-bottom select {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.modal form .date-time-wrapper .pickup-date-wrapper,
+.modal form .date-time-wrapper .delivery-date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal form .date-time-wrapper .pickup-date-wrapper #pickup-date,
+.modal form .date-time-wrapper .pickup-date-wrapper #delivery-date,
+.modal form .date-time-wrapper .delivery-date-wrapper #pickup-date,
+.modal form .date-time-wrapper .delivery-date-wrapper #delivery-date {
+  width: 100%;
+  margin: 0.3rem 0;
+}
+
+.modal form .date-time-wrapper #pickup-hours,
+.modal form .date-time-wrapper #delivery-hours,
+.modal form .date-time-wrapper #pickup-minutes,
+.modal form .date-time-wrapper #delivery-minutes {
+  width: 50%;
+}
+
+.modal form .driver-age-range-wrapper {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal form .driver-age-range-wrapper img {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+.modal form .driver-age-range-wrapper input,
+.modal form .delivery-option-wrapper input {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid #8d99c0;
+}
+
+.modal form .driver-age-range-wrapper input[type='checkbox'],
+.modal form .delivery-option-wrapper input[type='checkbox'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.modal form .driver-age-range-wrapper label,
+.modal form .delivery-option-wrapper label {
+  padding-left: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.modal form li:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+.modal form ul {
+  font-size: 0.8rem;
+}
+
+.modal form ul .fas {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.modal form .search-input {
+  background: none;
+  background-color: #fc6c4c;
+  color: #fff;
+  outline: inherit;
+  margin-top: 1.5rem;
+  height: 4.6rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
